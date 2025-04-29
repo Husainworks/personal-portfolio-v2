@@ -1,0 +1,13 @@
+:root {
+    /* Container Width */
+    --container-width: 500px;
+
+    /* Colors */
+    --everglade: #1F4C34;
+    --quarter-spanish-white: #F9F7EB;
+    --everglade-rgba-04: rgba(31, 76, 52, 0.4);
+    --quarter-spanish-white-rgba-03: rgba(249, 247, 235, 0.8);
+    
+    /* Spacing */
+    --header-height: 70px;
+}

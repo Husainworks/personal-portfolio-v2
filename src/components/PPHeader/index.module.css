@@ -1,0 +1,26 @@
+header {
+    background-color: var(--everglade);
+    position: sticky;
+    top: 0;
+    height: var(--header-height);
+}
+
+.header-wrapper {
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.header-logo {
+    color: var(--quarter-spanish-white);
+    text-decoration: none;
+}
+
+.nav-link-wrapper {
+    list-style-type: none;
+    gap: 15px;
+}
+
+.nav-link {
+    color: var(--quarter-spanish-white);
+    text-decoration: none;
+}

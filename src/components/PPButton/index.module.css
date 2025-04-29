@@ -1,0 +1,15 @@
+.resume-download-btn {
+    margin-top: 70px;
+    gap: 5px;
+    width: max-content;
+    display: flex;
+    place-items: center;
+    text-decoration: none;
+    padding: 10px 16px;
+    color: var(--quarter-spanish-white);
+    background-color: var(--everglade);
+    border-radius: 10px;
+    user-select: none;
+    white-space: nowrap;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.experience-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 9px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.experience-title {
+    font-weight: 700;
+}
+
+.experience-designation {
+    font-weight: 500;
+}

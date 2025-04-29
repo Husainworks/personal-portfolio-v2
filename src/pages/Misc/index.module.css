@@ -1,0 +1,21 @@
+.misc-section {
+    padding-bottom: 70px;
+}
+
+.education-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.education-title {
+    font-weight: 700;
+}

@@ -1,0 +1,18 @@
+.home-section {
+    height: calc(100dvh - var(--header-height));
+    background-color: var(--everglade);
+    color: var(--quarter-spanish-white);
+    padding: 45px 24px;
+}
+
+.home-section-wrapper {
+    flex-direction: column;
+    gap: 45px;
+    overflow: hidden;
+}
+
+.profilpic {
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+}
