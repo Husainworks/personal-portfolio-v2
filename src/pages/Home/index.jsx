@@ -13,7 +13,7 @@ export const Home = () => {
           </h1>
 
           <img
-            className={`${styles["profilpic"]} fluid-img`}
+            className={`${styles["profilepic"]} fluid-img`}
             src={profilpicture}
             alt="Profile Picture"
           />

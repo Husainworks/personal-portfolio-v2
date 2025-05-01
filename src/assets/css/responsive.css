@@ -1,0 +1,57 @@
+/* Responsive Container Starts */
+@media (min-width: 320px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 576px) {
+    :root {
+        --container-width: 500px;
+    }
+}
+
+/* Responsive Container End */
+
+@media (max-width:991px) {
+    .text-3xl {
+        font-size: 45px;
+    }
+
+    .section-title {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width:767px) {
+    .text-2xl {
+        font-size: 30px;
+    }
+
+    .text-3xl {
+        font-size: 40px;
+    }
+
+    .section-title {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:575px) {
+    .text-2xl {
+        font-size: 26px;
+    }
+
+    .text-3xl {
+        font-size: 35px;
+    }
+
+    .text-4xl {
+        font-size: 18px;
+    }
+
+    .section-title {
+        margin-top: 30px;
+    }
+}

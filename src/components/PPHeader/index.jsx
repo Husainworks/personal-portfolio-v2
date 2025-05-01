@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
-import { Link } from "react-scroll";
-import { navlinks } from "../../const/constantData";
 
 export const Header = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
