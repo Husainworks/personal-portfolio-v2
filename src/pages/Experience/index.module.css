@@ -18,3 +18,7 @@
 .experience-designation {
     font-weight: 500;
 }
+
+.experience-desc{
+    text-align: justify;
+}

@@ -11,13 +11,19 @@ export const About = () => {
             <div className={`divider`}></div>
           </div>
           <p className={`${styles["about-me"]}`}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequuntur vero laudantium commodi laborum, iure esse! Natus velit
-            optio sed laborum officia aut eos iure tempora dolorum, earum
-            aliquid beatae. Et! Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Eveniet aperiam ipsam unde eos ipsum voluptatem
-            quae voluptas nemo iste, possimus laboriosam dolor! Quae obcaecati,
-            doloremque pariatur in natus odio officiis!
+            I’m a Full Stack Developer currently working as a Frontend Developer
+            at White Orange Software, where I’ve contributed to several live
+            projects, gaining practical experience in building responsive and
+            production-ready web applications. I’m well-versed in several modern
+            frontend libraries, which help me create efficient and dynamic user
+            interfaces.
+          </p>
+          <p className={`${styles["about-me"]}`}>
+            Outside of work, I actively build personal projects to sharpen my
+            skills—most recently, I developed a full-fledged Book Store App
+            using the MERN stack. I'm passionate about turning ideas into
+            functional, user-friendly digital solutions and continuously
+            learning to stay up-to-date with the latest in web development.
           </p>
         </div>
       </section>

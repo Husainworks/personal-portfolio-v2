@@ -18,27 +18,25 @@ export const Header = () => {
                 </a>
               </li>
               <li>
-                <a className={`${styles["nav-link"]} text-lg`} href="#">
+                <a className={`${styles["nav-link"]} text-lg`} href="#about">
                   About
                 </a>
               </li>
               <li>
-                <a className={`${styles["nav-link"]} text-lg`} href="#">
+                <a
+                  className={`${styles["nav-link"]} text-lg`}
+                  href="#experience"
+                >
                   Experience
                 </a>
               </li>
               <li>
-                <a className={`${styles["nav-link"]} text-lg`} href="#">
+                <a className={`${styles["nav-link"]} text-lg`} href="#projects">
                   Projects
                 </a>
               </li>
               <li>
-                <a className={`${styles["nav-link"]} text-lg`} href="#">
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a className={`${styles["nav-link"]} text-lg`} href="#">
+                <a className={`${styles["nav-link"]} text-lg`} href="#footer">
                   Contact
                 </a>
               </li>

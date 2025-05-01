@@ -4,7 +4,7 @@ import styles from "./index.module.css";
 export const Footer = () => {
   return (
     <>
-      <footer>
+      <footer id="footer">
         <div className={`container`}>
           <div className={`${styles["contact-wrapper"]} d-align`}>
             <p className={`${styles["contact-title"]} text-xl`}>
@@ -25,13 +25,8 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className={`${styles["social-container"]}`}>
+        <div className={`${styles["social-container"]} d-align`}>
           <p className={`${styles["copyright"]}`}>© 2025 Husain Zaveri</p>
-          <div className={`${styles["social-wrapper"]} d-align`}>
-            <a href="#" className={`${styles["social-link"]} text-sm`}>github</a>
-            <a href="#" className={`${styles["social-link"]} text-sm`}>linkedin</a>
-            <a href="#" className={`${styles["social-link"]} text-sm`}>instagram</a>
-          </div>
         </div>
       </footer>
     </>

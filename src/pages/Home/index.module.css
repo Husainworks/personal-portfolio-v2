@@ -16,3 +16,18 @@
     height: 450px;
     border-radius: 5px;
 }
+
+.social-wrapper {
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-link {
+    color: var(--quarter-spanish-white);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: var(--quarter-spanish-white-rgba-03);
+}

@@ -16,8 +16,24 @@ export const Home = () => {
           />
 
           <h3 className={`${styles["designation"]} text-2xl`}>
-            Frontend Developer
+            FullStack Developer
           </h3>
+        </div>
+        <div className={`${styles["social-wrapper"]} d-align`}>
+          <a
+            target="_blank"
+            href="https://github.com/Husainworks"
+            className={`${styles["social-link"]} text-sm`}
+          >
+            github
+          </a>
+          <a
+            target="_blank"
+            href="www.linkedin.com/in/husain-zaveri-84059b216"
+            className={`${styles["social-link"]} text-sm`}
+          >
+            linkedin
+          </a>
         </div>
       </section>
     </>

@@ -15,15 +15,6 @@ export const Misc = () => {
 
           <div className={`${styles["education-wrapper"]}`}>
             <div className={`${styles["education-title"]} text-lg`}>
-              12<sup>th</sup> Standard
-            </div>
-            <div className={`${styles["education-desc"]}`}>
-              Shardayatan English Medium School <br />
-              Graduated: May 2021
-            </div>
-          </div>
-          <div className={`${styles["education-wrapper"]}`}>
-            <div className={`${styles["education-title"]} text-lg`}>
               Bachelor of Engineering in Computer Science
             </div>
             <div className={`${styles["education-desc"]}`}>
@@ -41,17 +32,20 @@ export const Misc = () => {
           </div>
 
           <p className={`${styles["skills-wrapper"]}`}>
-            <strong>Languages:</strong> C, HTML, CSS, JavaScript, Python
+            <strong>Languages:</strong> HTML, CSS, JavaScript, MJML
           </p>
           <p className={`${styles["skills-wrapper"]}`}>
-            <strong>Libraries/Frameworks:</strong> React.js, Node.js, MondoDB,
+            <strong>Libraries/Frameworks:</strong> React.js, Next.js,
             TailwindCSS
+          </p>
+          <p className={`${styles["skills-wrapper"]}`}>
+            <strong>Database:</strong> MongoDB
           </p>
           <p className={`${styles["skills-wrapper"]}`}>
             <strong>Version Control:</strong> Git, Gitlab, Github
           </p>
           <p className={`${styles["skills-wrapper"]}`}>
-            <strong>No Code:</strong> Webflow, Framer
+            <strong>No Code:</strong> Webflow
           </p>
         </div>
 
