@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 
-::selection{
+::selection {
     background-color: var(--everglade);
     color: var(--quarter-spanish-white);
 }
@@ -99,7 +99,4 @@ body {
     position: relative;
     width: 100%;
     background-color: var(--everglade-rgba-04);
-    opacity: 1;
-    transform: none;
-    transform-origin: 0% 50% 0px;
 }

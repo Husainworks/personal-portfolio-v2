@@ -1,13 +1,16 @@
 import React from "react";
 import styles from "./index.module.css";
 import { profilpicture } from "../../const/imageData";
+import { PPFadeText } from "../../components/PPFadeText";
 
 export const Home = () => {
   return (
     <>
       <section id="home" className={`${styles["home-section"]}`}>
         <div className={`container ${styles["home-section-wrapper"]} d-align`}>
-          <h1 className={`${styles["home-name"]} text-3xl`}>Husain Zaveri</h1>
+          <h1 className={`${styles["home-name"]} text-3xl`}>
+            <PPFadeText text="Husain Zaveri" />
+          </h1>
 
           <img
             className={`${styles["profilpic"]} fluid-img`}
@@ -15,8 +18,8 @@ export const Home = () => {
             alt="Profile Picture"
           />
 
-          <h3 className={`${styles["designation"]} text-2xl`}>
-            FullStack Developer
+          <h3 className="text-2xl">
+            <PPFadeText text="FullStack Developer" />
           </h3>
         </div>
         <div className={`${styles["social-wrapper"]} d-align`}>

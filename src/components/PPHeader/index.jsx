@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./index.module.css";
+import { Link } from "react-scroll";
+import { navlinks } from "../../const/constantData";
 
 export const Header = () => {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
   return (
     <>
       <header>
         <div className={`${styles["header-wrapper"]} d-align`}>
           <a className={`${styles["header-logo"]} text-2xl`} href="#">
-            Husain.
+            Husain
           </a>
-
           <nav>
-            <ul className={`${styles["nav-link-wrapper"]} d-align`}>
+            <ul
+              className={`${styles["nav-link-wrapper"]} d-align ${
+                hamburgerOpen ? styles["menu-open"] : ""
+              }`}
+            >
               <li>
                 <a className={`${styles["nav-link"]} text-lg`} href="#">
                   Home
@@ -41,6 +47,15 @@ export const Header = () => {
                 </a>
               </li>
             </ul>
+            <div
+              onClick={() => setHamburgerOpen(!hamburgerOpen)}
+              className={`${styles.hamburger}`}
+              id="hamburger"
+            >
+              <div className={styles["hamburger-line"]}></div>
+              <div className={styles["hamburger-line"]}></div>
+              <div className={styles["hamburger-line"]}></div>
+            </div>
           </nav>
         </div>
       </header>

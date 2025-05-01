@@ -4,7 +4,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    padding: 60px 24px 32px 24px;
+    padding: 60px 24px 24px 24px;
     position: relative;
     width: 100%;
     background-color: var(--everglade);
@@ -36,4 +36,6 @@ footer {
 .contact-mail:hover,
 .contact-phone:hover {
     color: var(--quarter-spanish-white-rgba-03);
+    text-decoration: 1px solid var(--quarter-spanish-white) underline;
+    text-underline-offset: 8px;
 }
