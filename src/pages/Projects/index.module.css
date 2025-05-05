@@ -1,0 +1,19 @@
+.project-wrapper{
+    margin-bottom: 16px;
+}
+
+.image-replacement {
+    width: 100%;
+    height: 175px;
+    border-radius: 10px;
+    background-color: aqua;
+    margin: 0 auto 15px auto;
+}
+
+.project-title {
+    margin-bottom: 10px;
+}
+
+.project-desc {
+    text-align: justify;
+}

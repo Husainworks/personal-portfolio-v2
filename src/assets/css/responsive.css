@@ -39,16 +39,16 @@
 }
 
 @media (max-width:575px) {
+    .text-xl {
+        font-size: 18px;
+    }
+
     .text-2xl {
         font-size: 26px;
     }
 
     .text-3xl {
         font-size: 35px;
-    }
-
-    .text-4xl {
-        font-size: 18px;
     }
 
     .section-title {

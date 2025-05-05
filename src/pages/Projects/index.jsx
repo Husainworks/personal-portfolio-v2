@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
+import { projects } from "../../const/constantData";
 
 export const Projects = () => {
   return (
@@ -10,13 +11,31 @@ export const Projects = () => {
             <h3 className={`section-title text-xl`}>Projects</h3>
             <div className={`divider`}></div>
           </div>
-          <p>
-            Think and Put screenshot and desc about the projects.. two mern
-            stack projects of my own and 2 live projects on which i have worked
-            on
-          </p>
+          <div className={`${styles["main-projects-wrapper"]}`}>
+            {projects.map((data, index) => {
+              return (
+                <div key={index} className={`${styles["project-wrapper"]}`}>
+                  {data.img ? (
+                    <img
+                      className={`${styles["project-image"]} fluid-img`}
+                      src={data.img}
+                      alt="project-img"
+                    />
+                  ) : (
+                    <></>
+                  )}
+                  <h6 className={`${styles["project-title"]} text-xl`}>
+                    {data.title}
+                  </h6>
+                  <p className={`${styles["project-desc"]}`}>{data.desc}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
     </>
   );
 };
+
+// Use swipers to showcase more photos of the project

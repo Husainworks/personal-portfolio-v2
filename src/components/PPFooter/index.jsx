@@ -11,13 +11,13 @@ export const Footer = () => {
               Contact Details
             </p>
             <a
-              className={`${styles["contact-mail"]} text-4xl`}
+              className={`${styles["contact-mail"]} text-xl`}
               href="mailto:husain53zaveri30@gmail.com"
             >
               husain53zaveri30@gmail.com
             </a>
             <a
-              className={`${styles["contact-phone"]} text-4xl`}
+              className={`${styles["contact-phone"]} text-xl`}
               href="tel:+916359243653"
             >
               +91 63592 43653
