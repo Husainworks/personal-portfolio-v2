@@ -1,7 +1,33 @@
 import React from "react";
 import styles from "./index.module.css";
+import { experience } from "../../const/constantData";
+
+const highlightKeywords = (text, keywords) => {
+  const parts = text.split(new RegExp(`(${keywords.join("|")})`, "gi"));
+  return parts.map((part, index) =>
+    keywords.some((kw) => kw.toLowerCase() === part.toLowerCase()) ? (
+      <strong key={index}>{part}</strong>
+    ) : (
+      part
+    )
+  );
+};
 
 export const Experience = () => {
+  const keywords = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "react.js",
+    "MJML",
+    "Webflow",
+    "MERN stack",
+    "MongoDB",
+    "Restful API",
+    "user authentication",
+    "responsive user interfaces",
+  ];
+
   return (
     <>
       <section id="experience">
@@ -11,12 +37,12 @@ export const Experience = () => {
             <div className={`divider`}></div>
           </div>
 
-          <div className={`${styles["experience-wrapper"]}`}>
+          {/* <div className={`${styles["experience-wrapper"]}`}>
             <h6 className={`${styles["experience-title"]} text-lg`}>
               White Orange Software
             </h6>
             <p className={`${styles["experience-designation"]}`}>
-              Frontend Developer Intern | Dec 2024 - Present
+              Frontend Developer Intern <span>Dec 2024 - Present</span>
             </p>
             <p className={`${styles["experience-desc"]}`}>
               At White Orange Software, I work as a Frontend Developer,
@@ -36,14 +62,14 @@ export const Experience = () => {
               custom email templates and built fully functional websites in
               Webflow based on specific client requirements.
             </p>
-          </div>
+          </div> */}
 
-          <div className={`${styles["experience-wrapper"]}`}>
+          {/* <div className={`${styles["experience-wrapper"]}`}>
             <h6 className={`${styles["experience-title"]} text-lg`}>
               Zidio Development
             </h6>
             <p className={`${styles["experience-designation"]}`}>
-              FullStack Developer Intern | July 2024 - August 2024
+              FullStack Developer Intern <span>July 2024 - August 2024</span>
             </p>
             <p className={`${styles["experience-desc"]}`}>
               During my internship at Zidio Development, I worked as a Full
@@ -66,7 +92,26 @@ export const Experience = () => {
               to view booking dates, renter details, and manage availability
               efficiently.
             </p>
-          </div>
+          </div> */}
+          {experience.map((data, index) => {
+            return (
+              <div key={index} className={`${styles["experience-wrapper"]}`}>
+                <h6 className={`${styles["experience-title"]} text-lg`}>
+                  {data.title}
+                </h6>
+                <p className={`${styles["experience-designation"]}`}>
+                  {data.designation} <span>{data.duration}</span>
+                </p>
+                <p className={`${styles["experience-desc"]}`}>
+                  {highlightKeywords(data.desc1, keywords)}
+                </p>
+                <p className={`${styles["experience-desc"]}`}>
+                  {highlightKeywords(data.desc2, keywords)}
+                </p>
+                <p className={`${styles["experience-desc"]}`}>{data.desc3}</p>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>

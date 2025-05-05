@@ -26,20 +26,34 @@ footer {
     color: var(--quarter-spanish-white);
     text-decoration: none;
     font-weight: 700;
+    position: relative;
 }
 
-.contact-mail:hover,
-.contact-phone:hover {
-    color: var(--quarter-spanish-white-rgba-03);
-    text-decoration: 1px solid var(--quarter-spanish-white) underline;
-    text-underline-offset: 8px;
+.contact-mail::after,
+.contact-phone::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--quarter-spanish-white);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.contact-mail:hover::after,
+.contact-phone:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 /* Responsive Starts */
 
 @media (max-width:991px) {
     .resume-download-btn {
-        margin-top: 45  px;
+        margin-top: 45 px;
     }
 }
 

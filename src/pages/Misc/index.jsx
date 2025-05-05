@@ -32,11 +32,11 @@ export const Misc = () => {
           </div>
 
           <p className={`${styles["skills-wrapper"]}`}>
-            <strong>Languages:</strong> HTML, CSS, JavaScript, MJML
+            <strong>Languages:</strong> HTML, CSS, JavaScript, C, Java
           </p>
           <p className={`${styles["skills-wrapper"]}`}>
             <strong>Libraries/Frameworks:</strong> React.js, Next.js,
-            TailwindCSS
+            TailwindCSS, MJML, Node.js, ANT Design, Bootstrap
           </p>
           <p className={`${styles["skills-wrapper"]}`}>
             <strong>Database:</strong> MongoDB
