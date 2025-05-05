@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
+import { navlinks } from "../../const/constantData";
 
 export const Header = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -16,7 +17,7 @@ export const Header = () => {
                 hamburgerOpen ? styles["menu-open"] : ""
               }`}
             >
-              <li>
+              {/* <li>
                 <a className={`${styles["nav-link"]} text-lg`} href="#">
                   Home
                 </a>
@@ -43,7 +44,20 @@ export const Header = () => {
                 <a className={`${styles["nav-link"]} text-lg`} href="#footer">
                   Contact
                 </a>
-              </li>
+              </li> */}
+              {navlinks.map((data, index) => {
+                return (
+                  <li key={index}>
+                    <a
+                      onClick={() => setHamburgerOpen(false)}
+                      className={`${styles["nav-link"]} text-lg`}
+                      href={data.href}
+                    >
+                      {data.label}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
             <div
               onClick={() => setHamburgerOpen(!hamburgerOpen)}

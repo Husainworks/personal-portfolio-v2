@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
 }
 
 ::selection {
@@ -54,6 +55,12 @@ body {
 .fluid-img {
     max-width: 100%;
     height: auto;
+}
+
+.body-wrapper {
+    position: relative;
+    z-index: 2;
+    background-color: var(--quarter-spanish-white);
 }
 
 .section-wrapper {

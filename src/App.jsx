@@ -12,11 +12,13 @@ function App() {
     <>
       <Header />
       <Home />
-      <About />
-      <Experience />
-      <Projects />
-      <Misc />
-      <Footer />
+      <div className="body-wrapper">
+        <About />
+        <Experience />
+        <Projects />
+        <Misc />
+        <Footer />
+      </div>
     </>
   );
 }

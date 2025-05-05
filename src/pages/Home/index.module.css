@@ -3,6 +3,9 @@
     background-color: var(--everglade);
     color: var(--quarter-spanish-white);
     padding: 45px 24px;
+    position: sticky;
+    z-index: 0;
+    top: 0;
 }
 
 .home-section-wrapper {

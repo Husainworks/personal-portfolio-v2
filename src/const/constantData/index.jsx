@@ -5,19 +5,19 @@ export const navlinks = [
   },
   {
     label: "About",
-    href: "about",
+    href: "#about",
   },
   {
     label: "Experience",
-    href: "experience",
+    href: "#experience",
   },
   {
     label: "Projects",
-    href: "projects",
+    href: "#projects",
   },
   {
     label: "Contact",
-    href: "footer",
+    href: "#footer",
   },
 ];
 
