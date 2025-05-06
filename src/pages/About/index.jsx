@@ -14,13 +14,13 @@ export const About = () => {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,
-          start: "top 80%", // when top of element hits 80% of viewport
-          toggleActions: "play none none none", // play once
+          start: "top 80%",
+          toggleActions: "play none none none",
         },
         x: -100,
         opacity: 0,
         duration: 1,
-        delay: index * 0.2, // stagger between paragraphs
+        delay: index * 0.2,
         ease: "power2.out",
       });
     });

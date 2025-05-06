@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./index.module.css";
 import { PPbutton } from "../../components/PPButton";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const Misc = () => {
+  const paraRefs = useRef([]);
+
+  useGSAP(() => {
+    paraRefs.current.forEach((el, index) => {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+        x: -100,
+        opacity: 0,
+        duration: 1,
+        delay: index * 0.2,
+        ease: "power2.out",
+      });
+    });
+  }, []);
   return (
     <>
-      <section className={`${styles["misc-section"]}`}>
+      <section
+        ref={(el) => (paraRefs.current[0] = el)}
+        className={`${styles["misc-section"]}`}
+      >
         {/* Education Section */}
         <div className={`section-wrapper container`}>
           <div className={`title-wrapper`}>
@@ -25,7 +51,10 @@ export const Misc = () => {
         </div>
 
         {/* Skills Section */}
-        <div className={`section-wrapper container`}>
+        <div
+          ref={(el) => (paraRefs.current[1] = el)}
+          className={`section-wrapper container`}
+        >
           <div className={`title-wrapper`}>
             <h3 className={`section-title text-xl`}>Skills</h3>
             <div className={`divider`}></div>

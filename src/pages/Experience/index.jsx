@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./index.module.css";
 import { experience } from "../../const/constantData";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const highlightKeywords = (text, keywords) => {
   const parts = text.split(new RegExp(`(${keywords.join("|")})`, "gi"));
@@ -14,6 +19,25 @@ const highlightKeywords = (text, keywords) => {
 };
 
 export const Experience = () => {
+  const paraRefs = useRef([]);
+
+  useGSAP(() => {
+    paraRefs.current.forEach((el, index) => {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+        x: -100,
+        opacity: 0,
+        duration: 1,
+        delay: index * 0.2,
+        ease: "power2.out",
+      });
+    });
+  }, []);
+
   const keywords = [
     "HTML",
     "CSS",
@@ -39,7 +63,11 @@ export const Experience = () => {
 
           {experience.map((data, index) => {
             return (
-              <div key={index} className={`${styles["experience-wrapper"]}`}>
+              <div
+                ref={(el) => (paraRefs.current[index] = el)}
+                key={index}
+                className={`${styles["experience-wrapper"]}`}
+              >
                 <h6 className={`${styles["experience-title"]} text-lg`}>
                   {data.title}
                 </h6>
