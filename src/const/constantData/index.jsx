@@ -24,13 +24,18 @@ export const navlinks = [
 export const projects = [
   {
     img: "To be taken",
-    title: "Job Portal App",
-    desc: "The Job Portal App is a full-stack web application developed using the MERN stack, a popular JavaScript-based framework that provides end-to-end capabilities for creating web applications. Shadcn UI is leveraged for the front-end components, delivering a clean, responsive, and accessible design that aligns with modern UI standards.",
+    title: "Expense Tracker",
+    link: "https://github.com/Husainworks/expense-tracker",
+    desc: "The Expense Tracker is a responsive and interactive web application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to manage their personal finances by tracking income and expenses with ease. Users can upload a profile photo or generate a personalized avatar based on their name for a custom experience. The app features a dynamic dashboard where users can add and categorize income and expense entries, each linked to a specific date for accurate tracking.",
+    desc2:
+      "To provide deeper financial insights, the application includes real-time, interactive Pie Charts, Bar Charts, and Line Charts that visualize income and expense data clearly and intuitively. Users can filter transactions by date to review financial activity over custom time ranges. Designed with a focus on usability and accessibility, this project showcases both frontend and backend integration, data visualization, and responsive design using modern web technologies.",
   },
   {
     img: "To be taken",
     title: "Book Store App",
-    desc: `A full fledged MERN stack project which uses the concepts of MongoDB, Express.JS, React.JS & Node.JS. It uses tailwind CSS for styling. It’s has both the client side and the admin dashboard to add, delete or edit the books. In the client side we can add different books to cart and checkout.`,
+    link: "https://github.com/Husainworks/Book-Store-App",
+    desc: `The Bookstore Web Application is a full-fledged e-commerce project built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) and styled with Tailwind CSS for a clean, responsive interface. It features both a client-side interface and an admin dashboard.`,
+    desc2: `On the client side, users can browse books, add them to the cart, and proceed to checkout. The admin dashboard allows authorized users to add, update, and delete books in real time. The application includes secure user authentication and authorization using JSON Web Tokens (JWT), ensuring protected routes and restricted access for admins. This project showcases the integration of modern frontend and backend technologies, user management, and real-time data handling in a practical e-commerce setup.`,
   },
   {
     title: "Reignbow-Gaming-Chatbot",

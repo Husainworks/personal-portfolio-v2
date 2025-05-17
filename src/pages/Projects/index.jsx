@@ -4,6 +4,7 @@ import { projects } from "../../const/constantData";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,10 +52,15 @@ export const Projects = () => {
                   ) : (
                     <></>
                   )}
-                  <h6 className={`${styles["project-title"]} text-xl`}>
-                    {data.title}
-                  </h6>
+                  <div className={`${styles["project-title-wrapper"]}`}>
+                    <Link target="_blank" to={`${data.link}`}>
+                      <h6 className={`${styles["project-title"]} text-xl`}>
+                        {data.title}
+                      </h6>
+                    </Link>
+                  </div>
                   <p className={`${styles["project-desc"]}`}>{data.desc}</p>
+                  <p className={`${styles["project-desc2"]}`}>{data.desc2}</p>
                 </div>
               );
             })}

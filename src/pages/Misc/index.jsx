@@ -32,6 +32,34 @@ export const Misc = () => {
         ref={(el) => (paraRefs.current[0] = el)}
         className={`${styles["misc-section"]}`}
       >
+        {/* Skills Section */}
+        <div
+          ref={(el) => (paraRefs.current[1] = el)}
+          className={`section-wrapper container`}
+        >
+          <div className={`title-wrapper`}>
+            <h3 className={`section-title text-xl`}>Skills</h3>
+            <div className={`divider`}></div>
+          </div>
+
+          <p className={`${styles["skills-wrapper"]}`}>
+            <strong>Languages:</strong> HTML, CSS, JavaScript, C, Java
+          </p>
+          <p className={`${styles["skills-wrapper"]}`}>
+            <strong>Libraries/Frameworks:</strong> React.js, Next.js,
+            TailwindCSS, Node.js, Express.js, MJML, ANT Design, Bootstrap
+          </p>
+          <p className={`${styles["skills-wrapper"]}`}>
+            <strong>Database:</strong> MongoDB
+          </p>
+          <p className={`${styles["skills-wrapper"]}`}>
+            <strong>Version Control:</strong> Git, Gitlab, Github
+          </p>
+          <p className={`${styles["skills-wrapper"]}`}>
+            <strong>No Code:</strong> Webflow
+          </p>
+        </div>
+
         {/* Education Section */}
         <div className={`section-wrapper container`}>
           <div className={`title-wrapper`}>
@@ -48,34 +76,6 @@ export const Misc = () => {
               Graduated: April 2025
             </div>
           </div>
-        </div>
-
-        {/* Skills Section */}
-        <div
-          ref={(el) => (paraRefs.current[1] = el)}
-          className={`section-wrapper container`}
-        >
-          <div className={`title-wrapper`}>
-            <h3 className={`section-title text-xl`}>Skills</h3>
-            <div className={`divider`}></div>
-          </div>
-
-          <p className={`${styles["skills-wrapper"]}`}>
-            <strong>Languages:</strong> HTML, CSS, JavaScript, C, Java
-          </p>
-          <p className={`${styles["skills-wrapper"]}`}>
-            <strong>Libraries/Frameworks:</strong> React.js, Next.js,
-            TailwindCSS, MJML, Node.js, ANT Design, Bootstrap
-          </p>
-          <p className={`${styles["skills-wrapper"]}`}>
-            <strong>Database:</strong> MongoDB
-          </p>
-          <p className={`${styles["skills-wrapper"]}`}>
-            <strong>Version Control:</strong> Git, Gitlab, Github
-          </p>
-          <p className={`${styles["skills-wrapper"]}`}>
-            <strong>No Code:</strong> Webflow
-          </p>
         </div>
 
         <div className={`section-wrapper container`}>
