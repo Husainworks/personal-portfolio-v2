@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import { profilpicture } from "../../const/imageData";
+import { profilepicture } from "../../const/imageData";
 import { PPFadeText } from "../../components/PPFadeText";
 
 export const Home = () => {
@@ -14,7 +14,7 @@ export const Home = () => {
 
           <img
             className={`${styles["profilepic"]} fluid-img`}
-            src={profilpicture}
+            src={profilepicture}
             alt="Profile Picture"
           />
 

@@ -1,0 +1,11 @@
+.mySwiper{
+    width: 450px;
+    height: 225px;
+    margin-bottom: 15px;
+}
+
+.slider-img{
+    cursor: pointer;
+    width: 425px;
+    height: 100%;
+}

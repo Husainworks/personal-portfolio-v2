@@ -23,7 +23,6 @@ export const navlinks = [
 
 export const projects = [
   {
-    img: "To be taken",
     title: "Expense Tracker",
     link: "https://github.com/Husainworks/expense-tracker",
     desc: "The Expense Tracker is a responsive and interactive web application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to manage their personal finances by tracking income and expenses with ease. Users can upload a profile photo or generate a personalized avatar based on their name for a custom experience. The app features a dynamic dashboard where users can add and categorize income and expense entries, each linked to a specific date for accurate tracking.",
@@ -31,7 +30,6 @@ export const projects = [
       "To provide deeper financial insights, the application includes real-time, interactive Pie Charts, Bar Charts, and Line Charts that visualize income and expense data clearly and intuitively. Users can filter transactions by date to review financial activity over custom time ranges. Designed with a focus on usability and accessibility, this project showcases both frontend and backend integration, data visualization, and responsive design using modern web technologies.",
   },
   {
-    img: "To be taken",
     title: "Book Store App",
     link: "https://github.com/Husainworks/Book-Store-App",
     desc: `The Bookstore Web Application is a full-fledged e-commerce project built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) and styled with Tailwind CSS for a clean, responsive interface. It features both a client-side interface and an admin dashboard.`,
@@ -39,6 +37,7 @@ export const projects = [
   },
   {
     title: "Reignbow-Gaming-Chatbot",
+    link: "#",
     desc: "I contributed to the development of the frontend for Reignbow Gaming Chatbot, a live project for the current company I am working in. Using React.js and Tailwind CSS, I was responsible for building responsive, user-friendly interfaces. My work involved setting up component structures, designing dynamic pages, and ensuring a consistent, visually appealing UI across the platform. This project gave me practical experience in developing scalable frontend architectures and collaborating within a professional development team in a real-world, production-level environment.",
   },
 ];
