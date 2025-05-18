@@ -1,11 +1,23 @@
-.mySwiper{
-    width: 450px;
-    height: 225px;
-    margin-bottom: 15px;
+.mySwiper {
+  width: 450px;
+  height: 225px;
+  margin-bottom: 15px;
 }
 
-.slider-img{
-    cursor: pointer;
-    width: 425px;
-    height: 100%;
+.slider-img {
+  cursor: pointer;
+  width: 425px;
+  height: 100%;
+}
+
+/* Responsive Starts */
+@media (max-width: 575px) {
+  .mySwiper {
+    width: 300px;
+    height: 150px;
+  }
+
+  .slider-img {
+    width: 275px;
+  }
 }
