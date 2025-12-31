@@ -41,7 +41,7 @@ export const About = () => {
           I’m a Full Stack Developer currently working as a Frontend Developer
           at White Orange Software, where I’ve contributed to several live
           projects, gaining practical experience in building responsive and
-          production-ready web applications. I’m well-versed in several modern
+          production ready web applications. I’m well versed in several modern
           frontend libraries, which help me create efficient and dynamic user
           interfaces.
         </p>
@@ -50,11 +50,21 @@ export const About = () => {
           ref={(el) => (paraRefs.current[1] = el)}
           className={styles["about-me"]}
         >
-          Outside of work, I actively build personal projects to sharpen my
-          skills—most recently, I developed a full-fledged Book Store App using
-          the MERN stack. I'm passionate about turning ideas into functional,
-          user-friendly digital solutions and continuously learning to stay
-          up-to-date with the latest in web development.
+          Outside of work, I actively build multiple personal projects to
+          sharpen my skills, most recently I developed a full-fledged Expense
+          Tracker App using the MERN stack. I'm passionate about turning ideas
+          into functional, user-friendly digital solutions and continuously
+          learning to stay up-to-date with the latest in web development.
+        </p>
+
+        <p
+          ref={(el) => (paraRefs.current[2] = el)}
+          className={styles["about-me"]}
+        >
+          Right now, my current focus is learning how AI can help generate
+          applications such as a novel writing website that can produce several
+          pages of content from a single prompt, or a blog app that can generate
+          an extensive blog based on a chosen writing style.
         </p>
       </div>
     </section>

@@ -45,8 +45,8 @@ export const projects = [
 export const experience = [
   {
     title: "White Orange Software",
-    designation: "Frontend Developer Intern",
-    duration: "Dec 2024 - Present",
+    designation: "Frontend Developer",
+    duration: "Dec 2024 - Dec 2025",
     desc1:
       "At White Orange Software, I work as a Frontend Developer, contributing to the design and development of responsive web interfaces for various client projects.",
     desc2:
